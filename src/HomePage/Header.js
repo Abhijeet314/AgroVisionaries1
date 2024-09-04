@@ -31,6 +31,16 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (isMenuOpen) {
+      setIsMenuOpen(false); // Close the mobile menu after clicking
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-20 p-4 transition-all duration-300 ${
@@ -45,8 +55,8 @@ const Header = () => {
           <li><Link to="/farmer-community" className="text-white">Community</Link></li>
           <li><Link to="/learning-center" className="text-white">Learning Center</Link></li>
           <li><Link to="/company-section" className="text-white">Company Section</Link></li>
-          <li><Link to="/about-us" className="text-white">About Us</Link></li>
-          <li><Link to="/contact" className="text-white">Contact</Link></li>
+          <li><a href="#about-us" onClick={() => scrollToSection('about-us')} className="text-white">About Us</a></li>
+          <li><a href="#contact" onClick={() => scrollToSection('contact')} className="text-white">Contact</a></li>
         </ul>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -67,8 +77,8 @@ const Header = () => {
           <li><Link to="/farmer-community" className="text-white text-2xl" onClick={toggleMenu}>Community</Link></li>
           <li><Link to="/learning-center" className="text-white text-2xl" onClick={toggleMenu}>Learning Center</Link></li>
           <li><Link to="/company-section" className="text-white text-2xl" onClick={toggleMenu}>Company Section</Link></li>
-          <li><Link to="/about-us" className="text-white text-2xl" onClick={toggleMenu}>About Us</Link></li>
-          <li><Link to="/contact" className="text-white text-2xl" onClick={toggleMenu}>Contact</Link></li>
+          <li><a href="#about-us" onClick={() => scrollToSection('about-us')} className="text-white text-2xl">About Us</a></li>
+          <li><a href="#contact" onClick={() => scrollToSection('contact')} className="text-white text-2xl">Contact</a></li>
         </ul>
       </div>
     </header>
