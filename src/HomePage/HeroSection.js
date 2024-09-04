@@ -15,7 +15,7 @@ const HeroSection = () => {
       <video
         ref={videoRef}
         className="fixed inset-0 w-full h-full object-cover -z-10"
-        src="/videos/3126484-hd_1920_1080_30fps.mp4"
+        src={`${process.env.PUBLIC_URL}/videos/3126484-hd_1920_1080_30fps.mp4`}
         autoPlay
         loop
         muted
