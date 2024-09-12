@@ -16,7 +16,7 @@ const App = () => {
       <div>
         <Header />
         <Routes>
-          <Route path="/" element={
+          <Route path="/AgroVisionaries1" element={
             <>
               <HeroSection />
               <Features />

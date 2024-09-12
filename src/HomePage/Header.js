@@ -48,9 +48,9 @@ const Header = () => {
       }`}
     >
       <nav className="flex justify-between items-center">
-        <div className="text-2xl font-bold text-white">AgroVisionaries</div>
+        <div className="text-2xl font-bold text-white">AgriConnect</div>
         <ul className="hidden md:flex space-x-4">
-          <li><Link to="/" className="text-white">Home</Link></li>
+          <li><Link to="/AgroVisionaries1" className="text-white">Home</Link></li>
           <li><Link to="/marketplace" className="text-white">Marketplace</Link></li>
           <li><Link to="/farmer-community" className="text-white">Community</Link></li>
           <li><Link to="/learning-center" className="text-white">Learning Center</Link></li>
