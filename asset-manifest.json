@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/AgroVisionaries1/static/css/main.1ffe914f.css",
-    "main.js": "/AgroVisionaries1/static/js/main.c8975953.js",
+    "main.js": "/AgroVisionaries1/static/js/main.ae574cc6.js",
     "static/js/453.7855f205.chunk.js": "/AgroVisionaries1/static/js/453.7855f205.chunk.js",
     "index.html": "/AgroVisionaries1/index.html",
     "main.1ffe914f.css.map": "/AgroVisionaries1/static/css/main.1ffe914f.css.map",
-    "main.c8975953.js.map": "/AgroVisionaries1/static/js/main.c8975953.js.map",
+    "main.ae574cc6.js.map": "/AgroVisionaries1/static/js/main.ae574cc6.js.map",
     "453.7855f205.chunk.js.map": "/AgroVisionaries1/static/js/453.7855f205.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1ffe914f.css",
-    "static/js/main.c8975953.js"
+    "static/js/main.ae574cc6.js"
   ]
 }
