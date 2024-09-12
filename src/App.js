@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './HomePage/Header';
 import Footer from './HomePage/Footer';
 import HeroSection from './HomePage/HeroSection';
@@ -9,14 +9,13 @@ import FarmerCommunity from './MainFeatures/FarmerCommunity';
 import LearningCenter from './MainFeatures/LearningCenter';
 import CompanySection from './MainFeatures/CompanySection';
 
-
 const App = () => {
   return (
     <Router>
       <div>
         <Header />
         <Routes>
-          <Route path="/AgroVisionaries1" element={
+          <Route path="/" element={
             <>
               <HeroSection />
               <Features />
@@ -27,7 +26,6 @@ const App = () => {
           <Route path="/learning-center" element={<LearningCenter />} />
           <Route path="/company-section" element={<CompanySection />} />
         </Routes>
-       
         <Footer />
       </div>
     </Router>
